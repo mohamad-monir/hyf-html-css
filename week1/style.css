@@ -1,0 +1,53 @@
+body {
+    margin:0;
+    background-color:whitesmoke;
+}
+.container{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:400px auto auto 200px;
+}
+.header {
+    background-image:url("https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?cs=srgb&dl=ballpen-business-cell-phone-796602.jpg&fm=jpg");
+    background-size: cover;
+    background-position: 0% 50%;
+    box-shadow: 0px 5px 20px gray;
+}
+.font {
+    font-style:oblique;
+    text-transform: uppercase;
+    float:right;
+    margin:50px 50px 0px 0px;
+    border:2px solid lightgray;
+    display:inline;
+    padding:20px;
+    border-radius:10px;
+    text-shadow:3px 3px 5px gray;
+    box-shadow:5px 5px 10px gray; 
+}
+.content {
+    line-height: 1.6;
+    margin:10px;
+    }
+    .mo-foto {
+        width:150px;
+        float: right;
+        margin-right:20px;
+    }
+    .info {
+        line-height: 1.6;
+    }
+    .infoHead {
+        color:gray;
+        border:2px solid gray;
+        display:inline;
+        margin-left:10px; 
+        padding:5px;
+        border-radius:5px;
+    }
+    .footer {
+        background:gray;
+    }
+
+p{color:green;}
+@media(min-width:900px){p{color:red;}}
