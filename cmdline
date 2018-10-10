@@ -1,0 +1,84 @@
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ ls
+greeting.txt  greetings.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ rm greeting.txt greeting.txt
+rm: cannot remove 'greeting.txt': No such file or directory
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ rm greetings.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ ls
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ cd ..
+
+moham@LAPTOP-EGI6147E MINGW32 ~
+$ rmdir cmdLine/
+
+moham@LAPTOP-EGI6147E MINGW32 ~
+$ clear
+
+moham@LAPTOP-EGI6147E MINGW32 ~
+$ mkdir cmdLine
+
+moham@LAPTOP-EGI6147E MINGW32 ~
+$ cd cmdLine
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ echo -e "Hallo\nHallo\nHallo\nHallo\nHallo" >greetings.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ tee <greetings.txt 1.txt 2.txt 3.txt 4.txt 5.txt>/cmdLine
+bash: /cmdLine: Permission denied
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ ls
+greetings.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ cat greetings.txt
+Hallo
+Hallo
+Hallo
+Hallo
+Hallo
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ tee < greetings.txt 1.txt 2.txt 3.txt 4.txt 5.txt
+Hallo
+Hallo
+Hallo
+Hallo
+Hallo
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ ls
+1.txt  2.txt  3.txt  4.txt  5.txt  greetings.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ echo "cat" > pets.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ echo "dog" >> pets.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ echo "hamster" >> pets.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ cat pets.txt
+cat
+dog
+hamster
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ echo "cat" > commands.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ echo "ls">> commands.txt
+
+moham@LAPTOP-EGI6147E MINGW32 ~/cmdLine
+$ echo "pwd">> commands.txt
