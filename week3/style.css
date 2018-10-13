@@ -1,0 +1,130 @@
+body {
+    margin:0;
+}
+.searchBar .material-icons.md-48 { font-size: 48px; }
+.container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: 8em 5em 16em auto auto auto auto auto 300px;
+}
+/* .container{
+    background:white;
+} */
+/* .container > div:nth-child(even) {
+    background:lightgray;
+}  */
+.govLogo {
+    display: block;
+    margin-left:42%;
+}
+.navBar {
+    background-color:#01689b;
+}
+.navBar a {
+    color:white;
+    text-decoration:none;
+}
+.navBar a:nth-child(1) {
+    display: block;
+    float:left;
+    margin: 10px;
+    font-size: 1.4rem;
+    font-family: "RO Sans",Calibri,sans-serif;
+    padding: 5px 0 5px 0px;
+}
+.navBar a:nth-child(n+2){
+    display:block;
+    float:right;
+    margin:10px;
+    font-size: 1.4rem;
+    font-family: "RO Sans",Calibri,sans-serif;
+    padding: 5px 0 5px 0;
+
+}
+.backGround {
+    background-image: url("https://www.rijksoverheid.nl/binaries/widescreen/content/gallery/rijksoverheid/attentie-afbeeldingen/onderwerpen/v/verlofregelingen-hero.jpg");
+    background-repeat:no-repeat;
+    background-size: 100em;
+}
+.searchBar {
+    float: right;   
+}
+.ulList {
+    display: inline-block;
+    background:white;
+    margin:20px;
+    padding:5px;
+    list-style-type:none;
+
+}
+.ulList li  {
+    list-style: none;
+   
+    
+}
+.ulList a {
+    text-decoration:none;
+    font-size: 1.125rem;
+}
+.wrapper {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto ;
+    margin:3px;
+}
+.navItem a {
+    text-decoration: none;
+    background:lightgray;
+}
+.content p {
+    color:black;
+}
+.threePic {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+}
+.secNested {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+}
+.secondNestedItem {
+    margin:5px;
+    padding:5px;
+}
+.secondNestedItem a {
+    text-decoration:none;
+
+}
+.twoBoxes a{
+    text-decoration:none;
+ }
+.boxOne {
+    border:2px solid lightgray;
+    display: inline-block;
+    width:10em;
+    height:10em;
+    padding:0px;
+    text-align: center;
+    font-size:40px;
+    margin: 2em;
+}
+.boxTwo {
+    border:2px solid lightgray;
+    display:inline-block;
+    width:10em;
+    height:10em;
+    padding:0px;
+    text-align:center;
+    font-size:40px;
+    margin: 2em;
+}
+.firstFooter {
+    display: grid;
+    background:#01689b;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+
